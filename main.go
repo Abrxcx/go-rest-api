@@ -14,7 +14,7 @@ const maxRetries = 3
 func main() {
 	var err error
 
-	db, err = sql.Open("mysql", "root:Blessy@123@tcp(localhost:3306)/emaildata")
+	db, err = sql.Open("mysql", "<username>:<password>@tcp(localhost:3306)/emaildata")
 	if err != nil {
 		log.Fatal(err)
 	}
